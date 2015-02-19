@@ -1,0 +1,3 @@
+[ckan.civicdata]
+url = http://www.civicdata.com
+apikey = foo-api-key
