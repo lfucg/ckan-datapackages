@@ -1,10 +1,17 @@
 ### Use dpm to (re)create a CKAN resource and push the data to it
 
-Will insert the path defined in code-enforcement/datapackage.json
+Will recreate the dataset and insert the data defined in code-enforcement/datapackage.json
 
 ```
 npm install datapackage -g
-cd code-enforcement
+cd lexington-code-enforcement-complaints
+dpm ckan civicdata
+```
+
+Same for building permits:
+
+```
+cd lexington-building-permits
 dpm ckan civicdata
 ```
 

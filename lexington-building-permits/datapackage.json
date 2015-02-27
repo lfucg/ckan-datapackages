@@ -1,0 +1,31 @@
+{
+  "name": "lexington-building-permits",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [{
+    "path": "lexington-building-permits.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [
+        {"name":"ID","type":"integer"},
+        {"name":"Date","type":"date"},
+        {"name":"Address","type":"text"},
+        {"name":"Suite","type":"text"},
+        {"name":"PermitType","type":"text"},
+        {"name":"ConstructionCost","type":"decimal"},
+        {"name":"OwnerName","type":"text"},
+        {"name":"Contractor","type":"text"},
+        {"name": "CleanAddress", "type":"text"},
+        {"name": "MatchType", "type":"text"},
+        {"name": "MatchAddress", "type":"text"},
+        {"name":"parcelId","type":"text"},
+        {"name":"lat","type":"float"},
+        {"name":"lng","type":"float"}
+      ]
+    },
+    "primaryKey": "ID"
+  }],
+  "description": ""
+}
