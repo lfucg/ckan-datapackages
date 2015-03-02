@@ -4,6 +4,8 @@ Will create the package - deleting first if it exists - and insert the data defi
 
 If the lexington-code-enforcement-complaints package exists in CKAN and a resource exists, its data will be completely recreated based on values of `lexington-code-enforcement-complaints.csv` but the resource id stays the same. This is handy so that we don't have to change the CKAN resource ids that our [ETL process](https://github.com/lfucg/lexington-pentaho-etl) upserts to.
 
+**Caveat:** Recreating the datasets will change the _id column that CKAN assigns. If Citygram has already consumed the event feed then the ['StatusLex' link](https://github.com/citygram/citygram-services/blob/7c34bc265a9e685739f55d32a62751e92f30a053/lib/spy_glass/registry/lexington-code-enforcement-complaints.rb#L19) that use the _id column will point to the wrong listing. 
+
 ```
 npm install datapackage -g
 cd lexington-code-enforcement-complaints
