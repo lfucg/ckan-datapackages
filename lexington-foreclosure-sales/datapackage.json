@@ -1,0 +1,25 @@
+{
+  "name": "lexington-foreclosure-sales-3",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [{
+    "path": "lexington-foreclosure-sales.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [
+        {"name":"SALEKEY","type":"integer"},
+        {"name":"SALEDT","type":"date"},
+        {"name":"ADDRESS","type":"text"},
+        {"name":"PRICE","type":"float"},
+        {"name":"SALEVAL","type":"integer"},
+        {"name":"parcelId","type":"text"},
+        {"name":"lat","type":"float"},
+        {"name":"lng","type":"float"}
+      ]
+    },
+    "primaryKey": "SALEKEY"
+  }],
+  "description": ""
+}
