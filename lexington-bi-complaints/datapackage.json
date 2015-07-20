@@ -1,0 +1,29 @@
+{
+  "name": "lexington-bi-complaints",
+  "title": "",
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [{
+    "path": "lexington-bi-complaints.csv",
+    "format": "csv",
+    "schema": {
+      "fields": [
+        {"name":"ID","type":"integer"},
+        {"name":"Date","type":"date"},
+        {"name":"Address","type":"text"},
+        {"name":"ComplaintType","type":"text"},
+        {"name":"Status","type":"text"},
+        {"name":"DateModified","type":"date"},
+        {"name": "CleanAddress", "type":"text"},
+        {"name": "MatchAddress", "type":"text"},
+        {"name":"lat","type":"float"},
+        {"name":"lng","type":"float"},
+        {"name":"parcelId","type":"text"},
+        {"name": "MatchType", "type":"text"}
+      ]
+    },
+    "primaryKey": "ID"
+  }],
+  "description": ""
+}
